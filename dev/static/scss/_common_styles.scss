@@ -1,10 +1,13 @@
-html {
+html,
+body {
 	line-height: 1;
 	font-size: 16px;
+	color: $mainColor;
 }
 
 body {
 	font-family: $mainFont;
+	background-image: url(../img/general/main-bg.jpg);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -100,4 +103,23 @@ button {
 }
 *:-ms-input-placeholder {
 	opacity: 1;
+}
+
+
+.logo {
+	font-family: $fontLogo;
+	text-transform: uppercase;
+}
+
+.btn {
+	font-size: 0.688rem;
+	padding: 10px 15px;
+	background: $bgBtn;
+	color: $colorBtn;
+	text-transform: uppercase;
+	border: none;
+	&:hover {
+		background: $bgBtnHover;
+		color: $colorBtnHover;
+	}
 }
