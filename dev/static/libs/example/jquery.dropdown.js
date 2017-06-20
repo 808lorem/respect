@@ -1,18 +1,9 @@
-;
-// Начинать писать отсюда!!!!
-$(document).ready(function () {
-	svg4everybody({});
-	$('ul.menu__sub:last').addClass('left');
-});
-
 var maxHeight = 400;
 
 $(function(){
 
     $(".dropdown > li").hover(function() {
-    	
-		
-		
+    
          var $container = $(this),
              $list = $container.find("ul"),
              $anchor = $container.find("a"),
@@ -63,5 +54,11 @@ $(function(){
             .removeClass("hover");
     
     });
-
+    
+    // Add down arrow only to menu items with submenus
+    $(".dropdown > li:has('ul')").each(function() {
+        $(this).find("a:first");
+    });
+    
+    
 });

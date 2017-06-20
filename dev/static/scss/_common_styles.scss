@@ -25,8 +25,12 @@ p {
 }
 
 a {
+	font-family: $mainFont;
     text-decoration: none;
     color: black;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 audio,
@@ -111,7 +115,7 @@ button {
 	text-transform: uppercase;
 }
 
-.btn {
+.main-btn {
 	font-size: 0.688rem;
 	padding: 10px 15px;
 	background: $bgBtn;
@@ -122,4 +126,8 @@ button {
 		background: $bgBtnHover;
 		color: $colorBtnHover;
 	}
+}
+
+.padding-none {
+	padding: 0;
 }
