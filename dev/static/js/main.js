@@ -107,3 +107,13 @@ $('.js-slick__slider').slick({
 //    // instead of a settings object
 //  ]
 });
+
+
+$('a.services__block').hover(
+	function() {
+		$(this).addClass('hover');
+	},
+	function() {
+		$(this).removeClass('hover');
+	}
+);

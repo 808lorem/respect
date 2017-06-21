@@ -2843,6 +2843,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+h1 {
+  font-size: 1.5rem; }
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -3055,6 +3058,53 @@ button {
     .slick-dots li button:before {
       font-size: 60px;
       opacity: .5; }
+
+.services__mr {
+  background-image: url(../img/general/bg.jpg);
+  margin-right: 17px;
+  width: 178px;
+  height: 210px; }
+  .services__mr:last-child {
+    margin-right: 0; }
+
+.services__block {
+  width: 178px;
+  height: 210px;
+  display: block;
+  padding: 30px 12px 0; }
+  .services__block.hover .services__icon {
+    background: #efeded; }
+  .services__block.hover .services__svg {
+    color: #000000; }
+  .services__block.hover .services__title {
+    color: #fffffe; }
+
+.services__icon {
+  width: 81px;
+  height: 81px;
+  background: #000000;
+  position: relative;
+  margin: 0 auto 14px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.services__svg {
+  position: absolute;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.services__title {
+  font-family: "ArimoRegular", "Arial", sans-serif;
+  color: #e4e0dd;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 12px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
