@@ -1,0 +1,46 @@
+.slider {
+	&__container {
+		
+	}
+	&__img {
+		position: relative;
+		img {
+			width: 100%;
+		}
+	}
+	&__title {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding: 27px 30px 27px 0;
+		background: $bgSlider;
+		position: absolute;
+		font-size: 1.5rem;
+		color: $colorSliderTitle;
+		text-transform: uppercase;
+		letter-spacing: -0.038rem;
+		text-align: right;
+	}
+}
+
+.slick-dots {
+	text-align: left;
+	bottom: 26px;
+	left: 30px;
+	li {
+		margin: 0 0px;
+		&.slick-active {
+			button {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+		button {
+			&:before {
+				font-size: 60px;
+				opacity: .5;
+			}
+		}	
+	}
+}
