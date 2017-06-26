@@ -1,5 +1,9 @@
 .services {
-	&__mr {
+	&__container {
+		padding-bottom: 30px;
+		border-bottom: 5px solid $bgSectionBordr;
+	}
+	&__col {
 		background-image: url(../img/general/bg.jpg);
 		margin-right: 17px;
 		width: 178px;

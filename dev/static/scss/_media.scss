@@ -7,17 +7,86 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.header {
+		&__form {
+			width: 100%;
+			padding: 0 5px;
+		}
+		&__search {
+			&_text {
+				width: 90%;
+			}
+		}
+	}
+	.menu {
+		&__btn {
+			display: block;
+		}
+		&__nav {
+			display: none;
+		}
+		&__item {
+			float: none;
+			width: 50%;
+			margin-bottom: 0;
+			&:last-child {
+				margin-bottom: 19px;
+			}
+		}
+		&__sub {
+			width: 100%;
+			right: -100%;
+			left: inherit;
+			top: 0;
+		}
+	}
+	
+	.services {
+		&__col {
+			width: 100%;
+			height: auto;
+			margin: 0;
+			border-bottom: 1px solid $bgServicesBorder;
+		}
+		&__block {
+			width: 100%;
+			height: auto;
+			padding: 10px;
+		}
+		&__title {
+			padding: 24px 10px;
+		}
+	}
+	
+	.info {
+		&__block {
+			margin-bottom: 20px;
+		}
+		&__img {
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.slider {
+		&__title {
+			font-size: 1rem;
+			padding: 10px 30px 10px 110px;
+		}
+	}
+	.slick-dots {
+		bottom: 10px;
+	}
 }
 
 /* Custom, iPhone Retina */

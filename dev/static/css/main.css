@@ -2818,6 +2818,10 @@ hr {
   font-size: 18.5rem;
   width: 1.32432em; }
 
+.svg__menu {
+  font-size: 51.2rem;
+  width: 1em; }
+
 .svg__notebook {
   font-size: 6.4rem;
   width: 1em; }
@@ -2843,7 +2847,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
-h1 {
+h2 {
+  font-size: 1.625rem;
+  font-family: "ArimoBold", "Arial", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3); }
+
+h3 {
   font-size: 1.5rem; }
 
 ul, li {
@@ -2912,6 +2923,9 @@ button {
 .clearfix {
   *zoom: 1; }
 
+.wrapper {
+  overflow: hidden; }
+
 *::-webkit-input-placeholder {
   opacity: 1; }
 
@@ -2976,11 +2990,22 @@ button {
 .menu.dropdown {
   position: relative; }
 
+.menu__btn {
+  display: none;
+  margin: 0 auto;
+  width: 40px;
+  cursor: pointer; }
+  .menu__btn:hover {
+    background-color: transparent !important; }
+  .menu__btn_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    color: #191a20; }
+
 .menu__nav {
-  height: 57px;
-  margin: 0 auto 19px;
-  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.05); }
+  display: block;
+  margin: 0 auto; }
 
 .menu__item {
   font-family: "Arial", sans-serif;
@@ -2991,7 +3016,10 @@ button {
   display: block;
   float: left;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  -webkit-box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 19px; }
   .menu__item a {
     display: block;
     padding: 23px 41px;
@@ -3010,7 +3038,7 @@ button {
 .menu__sub {
   display: none;
   position: absolute;
-  top: 0;
+  top: 57px;
   left: 0;
   width: 180px;
   z-index: 1000;
@@ -3030,7 +3058,8 @@ button {
         color: #1f2025 !important; }
 
 .slider__img {
-  position: relative; }
+  position: relative;
+  margin: 0 auto; }
   .slider__img img {
     width: 100%; }
 
@@ -3038,7 +3067,7 @@ button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 27px 30px 27px 0;
+  padding: 27px 30px 27px 110px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   font-size: 1.5rem;
@@ -3050,7 +3079,8 @@ button {
 .slick-dots {
   text-align: left;
   bottom: 26px;
-  left: 30px; }
+  left: 30px;
+  width: auto; }
   .slick-dots li {
     margin: 0 0px; }
     .slick-dots li.slick-active button:before {
@@ -3059,12 +3089,16 @@ button {
       font-size: 60px;
       opacity: .5; }
 
-.services__mr {
+.services__container {
+  padding-bottom: 30px;
+  border-bottom: 5px solid #f1f0ef; }
+
+.services__col {
   background-image: url(../img/general/bg.jpg);
   margin-right: 17px;
   width: 178px;
   height: 210px; }
-  .services__mr:last-child {
+  .services__col:last-child {
     margin-right: 0; }
 
 .services__block {
@@ -3106,11 +3140,80 @@ button {
   text-align: center;
   padding: 0 12px; }
 
+.info__container {
+  padding: 59px 0 60px;
+  border-bottom: 5px solid #f1f0ef; }
+
+.info__img {
+  margin: 20px 0; }
+  .info__img img {
+    width: 310px;
+    height: 130px;
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: 50% 20%;
+       object-position: 50% 20%; }
+
+.info__text {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.667;
+  margin-bottom: 18px; }
+
+.info__btn {
+  display: inline-block; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .header__form {
+    width: 100%;
+    padding: 0 5px; }
+  .header__search_text {
+    width: 90%; }
+  .menu__btn {
+    display: block; }
+  .menu__nav {
+    display: none; }
+  .menu__item {
+    float: none;
+    width: 50%;
+    margin-bottom: 0; }
+    .menu__item:last-child {
+      margin-bottom: 19px; }
+  .menu__sub {
+    width: 100%;
+    right: -100%;
+    left: inherit;
+    top: 0; }
+  .services__col {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  .services__block {
+    width: 100%;
+    height: auto;
+    padding: 10px; }
+  .services__title {
+    padding: 24px 10px; }
+  .info__block {
+    margin-bottom: 20px; }
+  .info__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; } }
+
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .slider__title {
+    font-size: 1rem;
+    padding: 10px 30px 10px 110px; }
+  .slick-dots {
+    bottom: 10px; } }
+
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */

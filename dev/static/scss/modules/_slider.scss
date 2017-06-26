@@ -1,9 +1,7 @@
 .slider {
-	&__container {
-		
-	}
 	&__img {
 		position: relative;
+		margin: 0 auto;
 		img {
 			width: 100%;
 		}
@@ -12,7 +10,7 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		padding: 27px 30px 27px 0;
+		padding: 27px 30px 27px 110px;
 		background: $bgSlider;
 		position: absolute;
 		font-size: 1.5rem;
@@ -27,6 +25,7 @@
 	text-align: left;
 	bottom: 26px;
 	left: 30px;
+	width: auto;
 	li {
 		margin: 0 0px;
 		&.slick-active {

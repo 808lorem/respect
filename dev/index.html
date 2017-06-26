@@ -21,10 +21,10 @@
     <header class="header">
       <div class="container header__container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-md-12 col-xs-24">
             <div class="row"><a href="javascript:void(0);"><span class="logo header__logo">Respect</span><span class="header__logo_descr">Business Expert</span></a></div>
           </div>
-          <div class="col-xs-12 padding-none">
+          <div class="col-md-12 col-xs-24 padding-none">
             <div class="row">
               <form class="header__form" action="#" method="post">
                 <input class="header__search_text" type="text" name="search">
@@ -38,7 +38,10 @@
     <section class="menu">
       <div class="container menu__container">
         <div class="row">
-          <div class="col-xs-24 padding-none">
+          <div class="col-xs-24 padding-none"><a class="menu__btn">
+                <svg class="svg svg__menu menu__btn_icon">
+                  <use xlink:href="static/img/svg/sprite.svg#menu"></use>
+                </svg></a>
             <nav class="menu__nav">
               <ul class="menu__list dropdown">
                 <li class="menu__item"><a class="menu__link" href="#">about Us </a>
@@ -93,41 +96,88 @@
     <section class="services">
       <div class="container services__container">
         <div class="row">
-          <div class="col-xs-4 services__mr padding-none"><a class="services__block" href="javascript:void(0);">
-              <div class="services__icon">
-                  <svg class="svg svg__strategy services__svg">
-                    <use xlink:href="static/img/svg/sprite.svg#strategy"></use>
-                  </svg>
+            <div class="col-xs-24 services__col padding-none"><a class="services__block" href="javascript:void(0);">
+                <div class="col-xs-12 col-md-24">
+                  <div class="services__icon">
+                      <svg class="svg svg__strategy services__svg">
+                        <use xlink:href="static/img/svg/sprite.svg#strategy"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-24">
+                  <h3 class="services__title">Our Business</h3>
+                </div></a></div>
+            <div class="col-xs-24 services__col padding-none"><a class="services__block" href="javascript:void(0);">
+                <div class="col-xs-12 col-md-24">
+                  <div class="services__icon">
+                      <svg class="svg svg__write services__svg">
+                        <use xlink:href="static/img/svg/sprite.svg#write"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-24">
+                  <h3 class="services__title">Our Approach</h3>
+                </div></a></div>
+            <div class="col-xs-24 services__col padding-none"><a class="services__block" href="javascript:void(0);">
+                <div class="col-xs-12 col-md-24">
+                  <div class="services__icon">
+                      <svg class="svg svg__link services__svg">
+                        <use xlink:href="static/img/svg/sprite.svg#link"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-24">
+                  <h3 class="services__title">Lead Generation</h3>
+                </div></a></div>
+            <div class="col-xs-24 services__col padding-none"><a class="services__block" href="javascript:void(0);">
+                <div class="col-xs-12 col-md-24">
+                  <div class="services__icon">
+                      <svg class="svg svg__notebook services__svg">
+                        <use xlink:href="static/img/svg/sprite.svg#notebook"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-24">
+                  <h3 class="services__title">Corporate Governance</h3>
+                </div></a></div>
+            <div class="col-xs-24 services__col padding-none"><a class="services__block" href="javascript:void(0);">
+                <div class="col-xs-12 col-md-24">
+                  <div class="services__icon">
+                      <svg class="svg svg__cog services__svg">
+                        <use xlink:href="static/img/svg/sprite.svg#cog"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-24">
+                  <h3 class="services__title">Marketing Services</h3>
+                </div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container info__container">
+        <div class="row">
+            <div class="col-md-8 col-xs-24">
+              <div class="info__block">
+                <h2 class="info__title">Planning</h2>
+                <div class="info__img"><img src="static/img/content/layer-1.jpg" alt="layer-1"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div><a class="info__btn main-btn" href="javascript:void(0);">Read More</a>
               </div>
-              <h1 class="services__title">Our Business</h1></a></div>
-          <div class="col-xs-4 services__mr padding-none"><a class="services__block" href="javascript:void(0);">
-              <div class="services__icon">
-                  <svg class="svg svg__write services__svg">
-                    <use xlink:href="static/img/svg/sprite.svg#write"></use>
-                  </svg>
+            </div>
+            <div class="col-md-8 col-xs-24">
+              <div class="info__block">
+                <h2 class="info__title">Integration</h2>
+                <div class="info__img"><img src="static/img/content/layer-2.jpg" alt="layer-2"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div><a class="info__btn main-btn" href="javascript:void(0);">Read More</a>
               </div>
-              <h1 class="services__title">Our Approach</h1></a></div>
-          <div class="col-xs-4 services__mr padding-none"><a class="services__block" href="javascript:void(0);">
-              <div class="services__icon">
-                  <svg class="svg svg__link services__svg">
-                    <use xlink:href="static/img/svg/sprite.svg#link"></use>
-                  </svg>
+            </div>
+            <div class="col-md-8 col-xs-24">
+              <div class="info__block">
+                <h2 class="info__title">Analysis</h2>
+                <div class="info__img"><img src="static/img/content/layer-3.jpg" alt="layer-3"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div><a class="info__btn main-btn" href="javascript:void(0);">Read More</a>
               </div>
-              <h1 class="services__title">Lead Generation</h1></a></div>
-          <div class="col-xs-4 services__mr padding-none"><a class="services__block" href="javascript:void(0);">
-              <div class="services__icon">
-                  <svg class="svg svg__notebook services__svg">
-                    <use xlink:href="static/img/svg/sprite.svg#notebook"></use>
-                  </svg>
-              </div>
-              <h1 class="services__title">Corporate Governance</h1></a></div>
-          <div class="col-xs-4 services__mr padding-none"><a class="services__block" href="javascript:void(0);">
-              <div class="services__icon">
-                  <svg class="svg svg__cog services__svg">
-                    <use xlink:href="static/img/svg/sprite.svg#cog"></use>
-                  </svg>
-              </div>
-              <h1 class="services__title">Marketing Services</h1></a></div>
+            </div>
         </div>
       </div>
     </section>
