@@ -77,6 +77,27 @@
 			display: block;
 		}
 	}
+	
+	.footer {
+		&__flexbox {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		&__col {
+			margin: 10px auto;
+			padding: 0;
+		}
+		&__logo {
+			text-align: center;
+		}
+		&__text {
+			text-align: center;
+		}
+		&__copy {
+			margin: 0 auto;
+			width: 139px;
+		}
+	}
 }
 
 /* Small Devices, Tablets */
