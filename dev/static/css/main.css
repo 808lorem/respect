@@ -3163,6 +3163,16 @@ button {
 .info__btn {
   display: inline-block; }
 
+.clients__title {
+  margin-bottom: 13px; }
+
+.clients__img img {
+  height: 101px;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: left;
+     object-position: left; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -3200,12 +3210,22 @@ button {
     padding: 24px 10px; }
   .info__block {
     margin-bottom: 20px; }
+  .info__title {
+    text-align: center; }
   .info__img img {
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover; } }
+       object-fit: cover; }
+  .info__btn {
+    margin: 0 auto;
+    width: 96px;
+    display: block; } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .clients__img img {
+    margin: 0 auto; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .slider__title {

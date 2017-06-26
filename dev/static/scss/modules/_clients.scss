@@ -1,0 +1,12 @@
+.clients {
+	&__title {
+		margin-bottom: 13px;
+	}
+	&__img {
+		img {
+			height: 101px;
+			object-fit: none;
+			object-position: left;
+		}
+	}
+}
