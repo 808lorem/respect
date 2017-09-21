@@ -20,6 +20,7 @@
 	&__nav {
 		display: block;
 		margin: 0 auto;
+		width: 100%;
 	}
 	&__item {
 		font-family: $mainFont;
@@ -31,11 +32,12 @@
 		float: left;
 		text-transform: uppercase;
 		position: relative;
-		box-shadow: 0px 6px 0px 0px $bgNavShadow;
+		box-shadow: 0 6px 0 0 $bgNavShadow;
 		margin-bottom: 19px;
+		width: 136px;
 		a {
 			display: block;
-			padding: 23px 41px;
+			padding: 23px 0;
 			color: $colorNav;
 			z-index: 2000;
 			position: relative;

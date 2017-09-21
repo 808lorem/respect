@@ -1,55 +1,96 @@
 ;
-// Начинать писать отсюда!!!!
-$(document).ready(function () {
-	svg4everybody({});
-	
-	$(window).resize(function(){
-		
-		var containerWidth = $('.container').css('width');
-		
-		if (containerWidth == '960px') {
-			$('nav.menu__nav').css({"display":'block'});
-			// Определить отступ для выпадающего меню последней кнопки
-			var menuLinkWidth = $('li.menu__item:last').width(),
-				menuSubWidth = parseFloat($('ul.menu__sub:last').css('width')),
-				menuSubLeft = menuLinkWidth - menuSubWidth;
+function include(url) {
+    var script = document.createElement('script');
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+}
+include('static/js/modules/slider.js');
+$(document).ready(function() {
+    svg4everybody({});
 
-			$('ul.menu__sub:last').css('left', menuSubLeft + 'px');
-		} else {
-			$('ul.menu__sub:last').css('left', 'auto');
-			
-			$('nav.menu__nav').css({"display":'none'});
-		}
-	});
+    $(window).resize(function() {
+        var widthWindow = $("body").width();
 
-	// вызовем событие resize
-	$(window).resize();
+        if(widthWindow > 768) {
+            $('nav.menu__nav').css({"display": 'block'});
+            addLeftLastSubMenu();
+            $('ul.menu__sub:last').css('top', 'auto');
+            addWidthButtonMainMenu();
+        } else {
+            $('ul.menu__sub:last').css('left', 'auto');
+            $('nav.menu__nav').css({"display": 'none'});
+            $('.menu__item').width('50%');
+
+            $('li.menu__item:last a').click(addTopLastSubMenu);
+        }
+
+        console.log(widthWindow);
+
+    });
+
+
+    // вызовем событие resize
+    $(window).resize();
 });
 
-var maxHeight = 400;
+/**
+ * устанавливает ширину кнопок главного меню
+ */
+function addWidthButtonMainMenu() {
+    var mainMenuWidth = $(".menu__nav").width(),
+        allButtonMainMenu = $(".menu__list").find(".menu__item").length,
+        result = mainMenuWidth / allButtonMainMenu;
 
-$(function(){
+    $(".menu__item").width(result.toFixed(2));
+}
+
+/**
+ * добавит левый отступ выпадаюшего списка последней кнопки главного меню
+ * при ширине страницы > 768px
+ */
+function addLeftLastSubMenu() {
+    var menuLinkWidth = parseFloat($('li.menu__item:last').css('width')),
+        menuSubWidth = parseFloat($('ul.menu__sub:last').css('width')),
+        menuSubLeft = menuLinkWidth - menuSubWidth;
+
+    $('ul.menu__sub:last').css('left', menuSubLeft + 'px');
+    console.log(menuSubLeft + ' = ' + menuLinkWidth + " - " + menuSubWidth);
+}
+
+/**
+ * добавит верхний отступ выпадаюшего списка последней кнопки главного меню
+ * при ширине страницы < 768px
+ */
+function addTopLastSubMenu() {
+    var menuLinkHeight = 57,
+        menuSubWidth = parseFloat($('ul.menu__sub:last').css('height')),
+        menuSubTop = menuLinkHeight - menuSubWidth;
+    $('ul.menu__sub:last').css('top', menuSubTop + 'px');
+}
+
+
+$(function() {
 
     $(".dropdown > li").hover(function() {
-    	
-         var $container = $(this),
-             $list = $container.find("ul"),
-             $anchor = $container.find("a");     // needs to move faster if list is taller
-        
+
+        var $container = $(this),
+            $list = $container.find("ul"),
+            $anchor = $container.find("a");     // needs to move faster if list is taller
+
         // need to save height here so it can revert on mouseout            
         $container.data("origHeight", $container.height());
-        
+
         // so it can retain it's rollover color all the while the dropdown is open
         $anchor.addClass("hover");
-        
+
         // make sure dropdown appears directly below parent list item    
         $list
             .show();
-        
+
     }, function() {
-    
+
         var $el = $(this);
-        
+
         // put things back to normal
         $el
             .height($(this).data("origHeight"))
@@ -58,64 +99,22 @@ $(function(){
             .end()
             .find("a")
             .removeClass("hover");
-    
+
     });
 
 });
 
 
-$('.js-slick__slider').slick({
-	dots: true,
-	infinite: false,
-	speed: 300,
-	arrows: false,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-});
-
-$('.js-slick__clients').slick({
-	dots: false,
-	infinite: false,
-	speed: 300,
-	arrows: false,
-	slidesToShow: 5,
-	slidesToScroll: 5,
-	responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-
-
 $('a.services__block').hover(
-	function() {
-		$(this).addClass('hover');
-	},
-	function() {
-		$(this).removeClass('hover');
-	}
+    function() {
+        $(this).addClass('hover');
+    },
+    function() {
+        $(this).removeClass('hover');
+    }
 );
 
 $("a.menu__btn").click(function() {
-		$('nav.menu__nav').toggle("display");
-	return false;
+    $('nav.menu__nav').toggle("display");
+    return false;
 });

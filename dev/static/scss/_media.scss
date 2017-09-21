@@ -18,28 +18,6 @@
 			}
 		}
 	}
-	.menu {
-		&__btn {
-			display: block;
-		}
-		&__nav {
-			display: none;
-		}
-		&__item {
-			float: none;
-			width: 50%;
-			margin-bottom: 0;
-			&:last-child {
-				margin-bottom: 19px;
-			}
-		}
-		&__sub {
-			width: 100%;
-			right: -100%;
-			left: inherit;
-			top: 0;
-		}
-	}
 	
 	.services {
 		&__col {
@@ -102,6 +80,29 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.menu {
+		&__btn {
+			display: block;
+		}
+		&__nav {
+			display: none;
+		}
+		&__item {
+			float: none;
+			width: 50%;
+			margin-bottom: 0;
+			box-shadow: none;
+			&:last-child {
+				margin-bottom: 19px;
+			}
+		}
+		&__sub {
+			width: 100%;
+			right: -100%;
+			left: inherit;
+			top: 0;
+		}
+	}
 	.clients {
 		&__img {
 			img {
