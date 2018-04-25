@@ -1,0 +1,26 @@
+// Миксины
+@import 'mixins';
+
+// Сброс стилей
+@import "normalize";
+
+// Шрифты
+@import "fonts";
+
+// Переменные
+@import 'vars';
+
+// Стили библиотек
+@import 'libs';
+
+// PNG спрайты
+@import 'png-sprite';
+
+// SVG спрайты
+ @import 'svg-sprite';
+
+// Общие стили
+@import 'common_styles';
+
+// Стили блоков
+@import 'blocks';

@@ -1,0 +1,4 @@
+mixin svg(name,mod)
+    - mod = mod || ''
+    svg(class='svg svg_' + name + ' ' + mod)
+        use(xlink:href="sprite/sprite.svg#" + name)

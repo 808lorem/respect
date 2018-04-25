@@ -1,0 +1,36 @@
+{
+  "name": "watch",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ilya Skryabin <808lorem@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1",
+    "jquery-validation": "^1.17.0",
+    "magnific-popup": "^1.1.0",
+    "jquery.maskedinput": "^1.4.1",
+    "normalize-libsass": "^1.0.3",
+    "jQuery.mmenu": "mmenu#^6.1.8",
+    "gridster": "gridster-js#^0.7.0",
+    "MasonJS": "masonjs#*",
+    "masonry": "^4.2.0",
+    "bootstrap-hover-dropdown": "^2.2.1",
+    "smartmenus": "^1.1.0",
+    "superfish": "^1.7.9",
+    "shufflejs": "^5.0.3"
+  },
+  "resolutions": {
+    "jquery": ">=1.8.0"
+  }
+}
