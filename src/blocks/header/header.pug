@@ -1,13 +1,3 @@
 header.header
-	.container.header__container
-		.row
-			.col-md-12.col-xs-24
-				.row
-					a(href="javascript:void(0);")
-						span.logo.header__logo Respect
-						span.header__logo_descr Business Expert
-			.col-md-12.col-xs-24.padding-none
-				.row
-					form(action="#" method="post").header__form
-						input(type="text" name="search").header__search_text
-						input(type="submit" value="search").header__search_btn.main-btn
+	include logo/logo
+	include search/search

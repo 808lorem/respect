@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
     <title>Главная страница
     </title>
   </head>
   <body>
     <noscript>Please, include JavaScript (Пожалуйста, включите JavaScript)</noscript>
+    <!-- Grid-->
+    <!-- column 12 | 24-->
+    <!--.top-line-->
     <div class="wrapper">
       <!--include ../blocks/header/header-->
-      <section class="info">
-              <div class="info__block">
-                <h2 class="info__title">Planning</h2>
-                <div class="info__img"><img src="img/layer-1.jpg" alt="layer-1"></div>
-                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
-                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
-              </div>
-              <div class="info__block">
-                <h2 class="info__title">Integration</h2>
-                <div class="info__img"><img src="img/layer-2.jpg" alt="layer-2"></div>
-                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
-                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
-              </div>
-              <div class="info__block">
-                <h2 class="info__title">Analysis</h2>
-                <div class="info__img"><img src="img/layer-3.jpg" alt="layer-3"></div>
-                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
-                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
-              </div>
+      <section class="menu">
+        <!--a.menu__btn-->
+        <!--	+svg('menu', 'menu__btn_icon')-->
+        <nav class="menu__nav">
+          <spam class="menu__item"><a class="menu__link" href="#">about Us</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">services</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">solutions</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">Training</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">support</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">Clients</a></spam>
+          <spam class="menu__item"><a class="menu__link" href="#">contacts</a></spam>
+        </nav>
       </section>
+      <!--include ../blocks/info/info-->
     </div>
+    <!--include ../blocks/footer/footer-->
   </body>
 </html>

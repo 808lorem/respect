@@ -1,0 +1,21 @@
+.copyright {
+	&__link {
+		color: $colorFooterCopy;
+		border-bottom: 1px solid $colorFooterCopy;
+		&__logo {
+			display: inline-block;
+			margin-bottom: 20px;
+
+		}
+	}
+	&__text {
+		font-family: $fontLink;
+		color: #adadad;
+		font-size: 12px;
+		margin-bottom: 13px;
+		line-height: 20px;
+	}
+	&__bottom-block {
+		color: $colorFooterCopy;
+	}
+}

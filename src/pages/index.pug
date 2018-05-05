@@ -4,8 +4,13 @@ block title
 	| Главная страница
 
 block mixin
-	include  ../common/pug/mixins/mixin-svg
+	include ../common/pug/mixins/mixin-svg
+	include ../common/pug/mixins/debug
 
 block content
 	//include ../blocks/header/header
-	include ../blocks/info/info
+	include ../blocks/menu/menu
+	//include ../blocks/info/info
+
+block footer
+	//include ../blocks/footer/footer

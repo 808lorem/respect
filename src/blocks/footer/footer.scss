@@ -1,0 +1,62 @@
+@import "copyright/copyright";
+@import "related-links/related-links";
+@import "follow-us/follow-us";
+
+.footer {
+	padding: 72px 0 93px;
+	background-image: url(../img/bg-footer.jpg);
+	font-size: 12px;
+	line-height: 20px;
+	@include sm-block {
+		padding: 34px 0 34px;
+	}
+	&__wrapper {
+		@include wrapper;
+	}
+	&__row {
+		@include row-flex;
+		justify-content: center;
+	}
+	&__column {
+		@include col;
+		&-1 {
+			@include size(6);
+			@include shift-right(2);
+			@include size-sm(20);
+			@include shift-sm(2);
+			@include sm-block() {
+				order: 1;
+				margin-top: 20px;
+				text-align: center;
+			}
+		}
+		&-2 {
+			@include size(8);
+			@include shift-right(1);
+			@include size-sm(10);
+			@include shift-sm(1);
+			@include size-xs(22);
+			@include shift-xs(1);
+		}
+		&-3 {
+			@include size(6);
+			@include shift-right(1);
+			@include size-sm(10);
+			@include shift-sm(1);
+			@include size-xs(22);
+			@include shift-xs(1);
+		}
+	}
+
+	&__title {
+		font-family: $fontTitle;
+		color: #ffffff;
+		font-size: 1.125rem;
+		margin-bottom: 19px;
+		margin-top: 7px;
+		@include xs-block {
+			text-align: center;
+		}
+	}
+}
+

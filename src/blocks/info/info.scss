@@ -1,15 +1,16 @@
 .info {
 	@include row-flex;
-	@include lg-block() {
+	@include md-block() {
 		justify-content: center;
 	}
 	&__block {
 		@include col;
 		@include size(8);
-		@include size-lg(20);
-		@include lg-block() {
+		@include size-md(18);
+		@include md-block() {
 			margin: 10px 0;
 		}
+		@include size-sm(22);
 	}
 	&__container {
 		padding: 59px 0 60px;
@@ -22,7 +23,7 @@
 			height: 130px;
 			object-fit: none;
 			object-position: 50% 20%;
-			@include lg-block() {
+			@include md-block() {
 				width: 100%;
 				object-fit: cover;
 			}
@@ -30,14 +31,14 @@
 	}
 	
 	&__text {
-		font-size: 0.75rem;
+		font-size: 12px;
 		font-weight: 400;
 		line-height: 1.667;
 		margin-bottom: 18px;
 	}
 	&__block-link {
 		@include row-flex;
-		@include lg-block {
+		@include md-block {
 			justify-content: flex-end;
 		}
 	}

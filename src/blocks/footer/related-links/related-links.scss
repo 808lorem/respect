@@ -1,0 +1,21 @@
+.related-links {
+	&__list {
+		@include row-flex;
+	}
+	&__column {
+		@include col;
+		@include size(12);
+		@include xs-block {
+			text-align: center;
+		}
+	}
+	&__item {
+		margin-bottom: 8px;
+	}
+	&__link {
+		color: $colorFooterNav;
+		&:hover {
+			color: $colorFooterNavHover;
+		}
+	}
+}

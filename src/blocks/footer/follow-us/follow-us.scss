@@ -1,0 +1,49 @@
+.follow-us {
+	&__block {
+		@include row-flex;
+		justify-content: center;
+		@include xs-block {
+			display: none;
+		}
+		&_xs {
+			display: none;
+			@include xs-block {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	&__column {
+		@include col;
+		@include size(12);
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $colorFooterSocial;
+		margin-bottom: 11px;
+		&:hover {
+			color: $colorFooterSocialHover;
+		}
+		@include xs-block {
+			margin: 0 10px;
+			padding: 5px;
+		}
+	}
+	&__icon {
+		display: inline-block;
+		margin-right: 9px;
+		@include xs-block {
+			margin: 0;
+		}
+		&_rss {
+			@include sprite($s-social__rss);
+		}
+		&_twitter {
+			@include sprite($s-social__twitter);
+		}
+		&_fb {
+			@include sprite($s-social__facebook);
+		}
+	}
+}

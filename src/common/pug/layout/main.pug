@@ -6,11 +6,13 @@ html
 		meta(name="viewport" content="width=device-width,initial-scale=1.0")
 		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="css/style.css")
-		script(src="js/main.js")
+		script(src="js/main.js" defer)
 		title
 			block title
 	body
 		noscript Please, include JavaScript (Пожалуйста, включите JavaScript)
 		block mixin
+		//.top-line
 		.wrapper
 			block content
+		block footer
