@@ -6,5 +6,19 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 
 ;
 $(document).ready(function() {
+let btn = $('#menuBtn'),
+	menu = $('#menuNav');
+
+btn.click(function () {
+	menu.slideToggle(1000, function () {
+		$(this).toggleClass('activ').removeAttr('style');
+	});
+});
+
+$(window).resize(function() {
+	if(btn.css('display') === 'none') {
+		menu.removeClass('activ');
+	}
+});
 
 });

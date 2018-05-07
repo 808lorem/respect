@@ -16,11 +16,15 @@
     <!-- column 12 | 24-->
     <!--.top-line-->
     <div class="wrapper">
-      <!--include ../blocks/header/header-->
+      <header class="header"><a class="header__logo" href="javascript:void(0);"><img class="logo header__logo" src="img/logo.png" alt="respect"><span class="logo_descr">Business Expert</span></a>
+        <form class="search" action="#" method="get">
+          <input class="search__field" type="text" name="search">
+          <input class="search__btn main-btn" type="submit" value="search">
+        </form>
+      </header>
       <section class="menu">
-        <!--a.menu__btn-->
-        <!--	+svg('menu', 'menu__btn_icon')-->
-        <nav class="menu__nav">
+        <button class="menu__btn" id="menuBtn">menu</button>
+        <nav class="menu__nav" id="menuNav">
           <spam class="menu__item"><a class="menu__link" href="#">about Us</a></spam>
           <spam class="menu__item"><a class="menu__link" href="#">services</a></spam>
           <spam class="menu__item"><a class="menu__link" href="#">solutions</a></spam>
@@ -30,8 +34,68 @@
           <spam class="menu__item"><a class="menu__link" href="#">contacts</a></spam>
         </nav>
       </section>
-      <!--include ../blocks/info/info-->
+      <section class="info">
+              <div class="info__block">
+                <h2 class="info__title">Planning</h2>
+                <div class="info__img"><img src="img/layer-1.jpg" alt="layer-1"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
+                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
+              </div>
+              <div class="info__block">
+                <h2 class="info__title">Integration</h2>
+                <div class="info__img"><img src="img/layer-2.jpg" alt="layer-2"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
+                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
+              </div>
+              <div class="info__block">
+                <h2 class="info__title">Analysis</h2>
+                <div class="info__img"><img src="img/layer-3.jpg" alt="layer-3"></div>
+                <div class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies odio magna. Mauris a lacus metus, sed ultrices dui. Vivamus at eros non lectus ultrices rutrum. Sed in neque diam.</div>
+                <div class="info__block-link"><a class="info__btn main-btn" href="#">Read More</a></div>
+              </div>
+      </section>
     </div>
-    <!--include ../blocks/footer/footer-->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__row">
+          <div class="footer__column footer__column-1"><a class="copyright__link__logo" href=""><img src="../img/logo-footer.png" alt="RESPECT"></a>
+            <p class="copyright__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ultricies odio magna.</p>
+            <div class="copyright__bottom-block"><span>&copy; 2012&nbsp; &nbsp; | &nbsp; &nbsp;</span><a class="copyright__link" href="">Privacy Policy</a></div>
+          </div>
+          <div class="footer__column footer__column-2">
+            <h3 class="footer__title related-links__title">Related Links</h3>
+            <nav class="related-links__list">
+              <ul class="related-links__column">
+                <li class="related-links__item"><a class="related-links__link" href="">About Us</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Testimonials</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Our Staff</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Events &amp; Press</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Contact Us</a></li>
+              </ul>
+              <ul class="related-links__column">
+                <li class="related-links__item"><a class="related-links__link" href="">Sign Up</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Forums</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">Affiliate Program</a></li>
+                <li class="related-links__item"><a class="related-links__link" href="">FAQ</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column footer__column-3">
+            <h3 class="footer__title">Follow Us</h3>
+            <div class="follow-us__block">
+              <div class="follow-us__column"><a class="follow-us__link" href="">
+                  <div class="follow-us__icon follow-us__icon_rss"></div><span>RSS</span></a><a class="follow-us__link" href="">
+                  <div class="follow-us__icon follow-us__icon_twitter"></div><span>Twitter</span></a></div>
+              <div class="follow-us__column"><a class="follow-us__link" href="">
+                  <div class="follow-us__icon follow-us__icon_fb"></div><span>Facebook</span></a></div>
+            </div>
+            <div class="follow-us__block_xs"><a class="follow-us__link" href="">
+                <div class="follow-us__icon follow-us__icon_rss"></div></a><a class="follow-us__link" href="">
+                <div class="follow-us__icon follow-us__icon_twitter"></div></a><a class="follow-us__link" href="">
+                <div class="follow-us__icon follow-us__icon_fb"></div></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

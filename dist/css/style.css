@@ -719,6 +719,24 @@ button {
       flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px;
+  position: relative;
+  z-index: 99;
+}
+
+.menu__btn {
+  display: none;
+  color: #eaeaea;
+  width: 100%;
+  background: #191a20;
+  border: none;
+  padding: 20.5px 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 560px) {
+  .menu__btn {
+    display: block;
+  }
 }
 
 .menu__nav {
@@ -730,6 +748,22 @@ button {
           justify-content: center;
   margin-bottom: 19px;
   width: 100%;
+}
+
+@media screen and (max-width: 560px) {
+  .menu__nav {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 55px;
+  }
+}
+
+.menu__nav.activ {
+  display: block;
 }
 
 .menu__item {

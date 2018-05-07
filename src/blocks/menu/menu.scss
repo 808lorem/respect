@@ -1,10 +1,33 @@
 .menu {
 	@include row-flex;
+	position: relative;
+	z-index: 99;
+	&__btn {
+		display: none;
+		color: $colorNav;
+		width: 100%;
+		background: $bgNav;
+		border: none;
+		padding: 20.5px 0;
+		text-transform: uppercase;
+		@include xs-block {
+			display: block;
+		}
+	}
 	&__nav {
 		display: flex;
 		justify-content: center;
 		margin-bottom: 19px;
 		width: 100%;
+		@include xs-block {
+			display: none;
+			flex-direction: column;
+			position: absolute;
+			top: 55px;
+		}
+		&.activ {
+			display: block;
+		}
 	}
 	&__item {
 		width: 100%;

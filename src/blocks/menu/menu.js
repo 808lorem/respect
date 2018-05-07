@@ -1,5 +1,3 @@
-;
-$(document).ready(function() {
 let btn = $('#menuBtn'),
 	menu = $('#menuNav');
 
@@ -13,6 +11,4 @@ $(window).resize(function() {
 	if(btn.css('display') === 'none') {
 		menu.removeClass('activ');
 	}
-});
-
 });
