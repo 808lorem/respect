@@ -1,0 +1,8 @@
+include clients__mixin
+include clients__data
+
+section.clients
+	h2.clients__title Our Clients
+	#clients__slick
+		each item in dataClients
+			+clients(item)

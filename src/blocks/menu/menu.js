@@ -1,8 +1,8 @@
-let btn = $('#menuBtn'),
-	menu = $('#menuNav');
+var menuBtn = $('#menuBtn'),
+	mainMenu = $('#menuNav');
 
-btn.click(function () {
-	menu.slideToggle(1000, function () {
+menuBtn.click(function () {
+	mainMenu.slideToggle(1000, function () {
 		$(this).toggleClass('activ').removeAttr('style');
 	});
 });

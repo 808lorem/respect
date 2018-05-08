@@ -1,0 +1,46 @@
+.clients {
+	padding: 59px 0 24px;
+	&__title {
+		margin-bottom: 13px;
+	}
+	&__img {
+		img {
+			height: 101px;
+			object-fit: none;
+			object-position: 0 50%;
+			@include md-block {
+				margin: 0 auto;
+				object-position: 50% 50%;
+			}
+		}
+	}
+	.slick-dots {
+		display: none;
+		width: auto;
+		bottom: -50px;
+		left: 50%;
+		transform: translateX(-50%);
+		@include md-block {
+			display: block;
+		}
+		li {
+			margin: 0 0;
+			width: 17px;
+			&.slick-active {
+				button {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+			button {
+				&:before {
+					font-size: 55px;
+					opacity: .5;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+}

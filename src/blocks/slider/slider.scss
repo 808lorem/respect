@@ -38,34 +38,34 @@
 			padding: 25px 10px 20px;
 		}
 	}
-}
-
-.slick-dots {
-	bottom: 38px;
-	left: 49px;
-	width: auto;
-	@include sm-block {
-		bottom: 10px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	li {
-		margin: 0 0;
-		width: 17px;
-		&.slick-active {
+	.slick-dots {
+		bottom: 38px;
+		left: 49px;
+		width: auto;
+		@include sm-block {
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		li {
+			margin: 0 0;
+			width: 17px;
+			&.slick-active {
+				button {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
 			button {
 				&:before {
-					opacity: 1;
+					font-size: 55px;
+					opacity: .5;
+					left: 50%;
+					transform: translateX(-50%);
 				}
 			}
 		}
-		button {
-			&:before {
-				font-size: 55px;
-				opacity: .5;
-				left: 50%;
-				transform: translateX(-50%);
-			}
-		}
 	}
 }
+
