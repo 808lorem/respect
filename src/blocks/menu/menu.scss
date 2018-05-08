@@ -17,7 +17,6 @@
 	&__nav {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 19px;
 		width: 100%;
 		@include xs-block {
 			display: none;

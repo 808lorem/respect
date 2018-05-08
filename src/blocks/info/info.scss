@@ -1,4 +1,7 @@
 .info {
+	padding-top: 59px;
+	padding-bottom: 60px;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.02);
 	@include row-flex;
 	@include md-block() {
 		justify-content: center;
@@ -6,11 +9,10 @@
 	&__block {
 		@include col;
 		@include size(8);
-		@include size-md(18);
+		@include size-md(24);
 		@include md-block() {
 			margin: 10px 0;
 		}
-		@include size-sm(22);
 	}
 	&__container {
 		padding: 59px 0 60px;

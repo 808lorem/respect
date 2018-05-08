@@ -1,0 +1,12 @@
+mixin servicesBlock(svgName, title)
+	a(href="javascript:void(0);").services__column
+		.services__icon
+			+svg(''+svgName, 'services__svg')
+		h3.services__title= title
+
+section.services
+	+servicesBlock('strategy', 'Our Business')
+	+servicesBlock('write', 'Our Approach')
+	+servicesBlock('link', 'Lead Generation')
+	+servicesBlock('notebook', 'Corporate Governance')
+	+servicesBlock('cog', 'Marketing Services')

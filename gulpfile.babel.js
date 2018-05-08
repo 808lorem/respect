@@ -25,10 +25,10 @@ function onerror(e) {
 // BROWSERSYNC
 gulp.task('browsersync', () => {
 	sync.init({
+		// tunnel: 'sync', // Для мобильного
 		server: {
 			baseDir: "dist"
 		},
-		port: 3000,
 		open: false,
 		notify: false
 	});
@@ -194,7 +194,7 @@ gulp.task('sprite:png', function() {
 
 // СБОРКА СПРАЙТА SVG
 gulp.task('sprite:svg', function () {
-	let mask = 'src/common/sprite/_svg-sprite/**/*.svg';
+	let mask = 'src/common/sprite/svg-sprite/**/*.svg';
 
 	function run() {
 		return gulp.src(mask)

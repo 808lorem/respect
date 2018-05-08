@@ -1,0 +1,99 @@
+.services {
+	@include row-flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.02);
+	@include sm-block {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 15px;
+	}
+	&__column {
+		background-image: url(../img/dark-bg.jpg);
+		max-width: 178px;
+		width: 100%;
+		padding: 30px 25px 37px;
+		&:hover {
+			.services {
+				&__icon {
+					background: $bgServicesIconHover;
+				}
+				&__svg {
+					color: $colorServicesIconHover;
+				}
+				&__title {
+					color: $colorServicesTitleHover;
+				}
+			}
+		}
+		@include md-block {
+			background-image: none;
+			max-width: 100px;
+			width: inherit;
+			padding: 0 5px 0;
+			&:hover {
+				.services {
+					&__icon {
+						background: $bgServicesIconHover;
+					}
+					&__svg {
+						color: $colorServicesIconHover;
+					}
+					&__title {
+						color: $colorServicesIconHover;
+					}
+				}
+			}
+		}
+		@include sm-block {
+			display: block;
+			max-width: inherit;
+			width: 100%;
+			margin-bottom: 5px;
+			&:hover {
+				.services {
+					&__title {
+						color: #000000;
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+	&__icon {
+		width: 81px;
+		height: 81px;
+		background: $bgServicesIcon;
+		position: relative;
+		margin: 0 auto 14px;
+		border-radius: 50%;
+		@include sm-block {
+			display: none;
+		}
+	}
+	&__svg {
+		position: absolute;
+		color: $colorServicesIcon;
+		width: 40px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&__title {
+		font-family: $fontTitle;
+		color: $colorServicesTitle;
+		font-weight: 400;
+		font-size: 24px;;
+		text-align: center;
+		@include md-block {
+			font-size: 16px;
+			color: $bgServicesIcon;
+		}
+		@include sm-block {
+			background: rgb(0, 0, 0);
+			color: #fff;
+			padding: 5px;
+			text-transform: uppercase;
+		}
+	}
+}

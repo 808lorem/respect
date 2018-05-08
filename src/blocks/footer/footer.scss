@@ -4,7 +4,7 @@
 
 .footer {
 	padding: 72px 0 93px;
-	background-image: url(../img/bg-footer.jpg);
+	background-image: url(../img/dark-bg.jpg);
 	font-size: 12px;
 	line-height: 20px;
 	@include sm-block {
@@ -54,6 +54,7 @@
 		font-size: 1.125rem;
 		margin-bottom: 19px;
 		margin-top: 7px;
+		font-weight: 400;
 		@include xs-block {
 			text-align: center;
 		}
